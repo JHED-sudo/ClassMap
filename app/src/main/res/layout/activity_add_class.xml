@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semi_transparent_white"
+    tools:context=".add_class">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="ADD CLASS"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="5"
+        android:shadowRadius="12"
+        android:background="@color/indigo_500"
+        android:padding="17dp"
+        android:paddingLeft="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <EditText
+            android:id="@+id/inputSubject"
+            android:hint="Subject"
+            android:textColorHint="@color/gray_600"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_button"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/inputRoom"
+            android:hint="Room (ex. BH201)"
+            android:textColorHint="@color/gray_600"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_button"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/inputTime"
+            android:hint="Time (ex. 1:00 - 2:30 PM)"
+            android:textColorHint="@color/gray_600"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_button"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDay"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:text="Save"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_add"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
